@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #tag1 {
+            color: #03f70b;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 29px;
+        }
+
+        #tag2 {
+            color: darkblue;
+            font-family: cursive;
+            font-size: 22px;
+        }
+
+        #tag2:hover {
+            color: red; /* Change color when the cursor hovers over it */
+        }
+
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee">
+        <h1>marquee using js</h1>
+    </div>
+    <p id="tag1">Text One</p>
+    <p id="tag2">Text Two</p>
+</body>
+</html>
